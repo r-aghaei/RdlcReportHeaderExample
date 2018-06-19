@@ -1,4 +1,4 @@
-﻿namespace RdlcReportExample
+﻿namespace RdlcReportHeaderExample
 {
     partial class Form1
     {
@@ -41,7 +41,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.ProductBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "RdlcReportExample.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "RdlcReportHeaderExample.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reportViewer1.Name = "reportViewer1";
@@ -51,7 +51,7 @@
             // 
             // ProductBindingSource
             // 
-            this.ProductBindingSource.DataSource = typeof(RdlcReportExample.Product);
+            this.ProductBindingSource.DataSource = typeof(RdlcReportHeaderExample.Product);
             // 
             // Form1
             // 
